@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Snake v8</title>
+    <!-- Link our styles from snake_game.css -->
+    <link rel="stylesheet" type="text/css" href="snake_game.css" />
+  </head>
+  <body>
+    <!-- game board -->
+    <section id = 'gameContainer'></section>
+
+    <!-- scores -->
+    <section id="scoreContainer">
+      <section class="scoreBoard">Food: <span id="pointsEarned">0</span></section>
+      <section class="scoreBoard">Blocks: <span id="pointsTraveled">0</span></section>
+    </section>
+
+    <!-- mobile controls -->
+    <section id="onScreenControllers">
+      <button id="leftButton">◀️</button>
+      <div>
+        <button id="upButton">🔼</button>
+        <button id="downButton">🔽</button>
+      </div>
+      <button id="rightButton">▶️</button>
+    </section>
+
+    <div></div>
+  </body>
+
+  <script src="snake_game.js"></script>
+</html>
